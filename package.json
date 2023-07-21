@@ -1,0 +1,28 @@
+{
+  "name": "@metaphorlism/cli-templates",
+  "version": "0.1.2",
+  "description": "",
+  "type": "module",
+  "author": "Metaphorlism",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/metaphorlism/cli-templates.git"
+  },
+  "keywords": [
+    "cli-templates"
+  ],
+  "files": [
+    "dist"
+  ],
+  "bin": {
+    "@metaphorlism/cli-templates": "./dist/index.js"
+  }, 
+  "license": "MIT",
+  "devDependencies": {
+    "inquirer": "^9.2.8"
+  },
+  "engines": {
+    "node": ">=16.8.0"
+  }
+}
