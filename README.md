@@ -17,5 +17,5 @@ Choose your option with arrow up/down.
 Input your project name.
 Default is `metaphorlism_boilderplate`.
 ```bash
-? Project name: (metaphorlism_templates)
+? Project name: (metaphorlism_boilderplate)
 ```
