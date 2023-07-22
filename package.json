@@ -1,6 +1,6 @@
 {
-  "name": "@metaphorlism/cli-templates",
-  "version": "0.1.3",
+  "name": "@metaphorlism/templates",
+  "version": "0.1.0",
   "description": "",
   "type": "module",
   "author": "Metaphorlism",
@@ -10,13 +10,19 @@
     "url": "git+https://github.com/metaphorlism/cli-templates.git"
   },
   "keywords": [
-    "cli-templates"
+    "templates",
+    "boilderplate",
+    "electron",
+    "tailwindcss",
+    "react",
+    "typescirpt",
+    "discordbot"
   ],
   "files": [
     "dist"
   ],
   "bin": {
-    "@metaphorlism/cli-templates": "./dist/index.js"
+    "@metaphorlism/templates": "./dist/index.js"
   },
   "license": "MIT",
   "engines": {

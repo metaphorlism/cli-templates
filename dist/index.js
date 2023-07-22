@@ -21,7 +21,7 @@ const QUESTIONS = [
     name: "project-name",
     type: "input",
     message: "Project name:",
-    default: "metaphorlism_templates",
+    default: "metaphorlism_boilderplate",
     validation: function (input) {
       if (/^([A-Za-z\-\\_\d])+$/.test(input)) return true;
       else
