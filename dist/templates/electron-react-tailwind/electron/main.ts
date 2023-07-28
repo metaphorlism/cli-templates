@@ -1,5 +1,7 @@
-import { app, BrowserWindow, ipcMain } from "electron";
+import { app, BrowserWindow } from "electron";
 import path from "node:path";
+import { registerIpcMainEvents } from "./utils/ipcMainEvent";
+import IpcEvents from "./events";
 
 // The built directory structure
 //
@@ -40,10 +42,7 @@ function createWindow() {
   }
 }
 
-ipcMain.on("ping", (e, options) => {
-  console.log(e, options);
-  console.log("pong");
-});
+registerIpcMainEvents(IpcEvents);
 
 app.on("window-all-closed", () => {
   win = null;

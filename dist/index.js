@@ -72,4 +72,7 @@ inquirer.prompt(QUESTIONS).then((answers) => {
   }
 
   createDirectoryContents(templatePath, projectName);
+
+  console.log(`cd ${projectName} && npm install`);
+  console.log(`Happy Coding.`);
 });
