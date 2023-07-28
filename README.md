@@ -1,6 +1,6 @@
 # Create boilerplate
 
-📦🔥 Create boilerplate with our packages. 
+📦🔥 Create a boilerplate with our packages. 
 
 ## Installation
 Execute our package with this command.
@@ -8,14 +8,16 @@ Execute our package with this command.
 npx @metaphorlism/templates
 ```
 
-Choose your option with arrow up/down.
+Choose your option with an arrow up/down.
 ```bash
 ? What project template would you like to use? (Use arrow keys)
 - Options
 ```
 
-Input your project name.
-Default is `metaphorlism_boilderplate`.
+> You can check out the templates in `dist/templates` folder.
+
+Please just input your project name.  
+The default is `metaphorlism_boilderplate`.
 ```bash
 ? Project name: (metaphorlism_boilderplate)
 ```
