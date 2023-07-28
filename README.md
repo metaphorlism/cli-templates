@@ -5,7 +5,7 @@
 ## Installation
 Execute our package with this command.
 ```bash
-npx @metaphorlism/cli-templates
+npx @metaphorlism/templates
 ```
 
 Choose your option with arrow up/down.
