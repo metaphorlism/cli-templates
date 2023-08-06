@@ -98,5 +98,6 @@ setTimeout(removeLoading, 4999);
 contextBridge.exposeInMainWorld("ipcRenderer", {
   send: (channel: string, data: any[]) => ipcRenderer.send(channel, data),
   on: (channel: string, func: (...args: any[]) => void) =>
-    ipcRenderer.on(channel, (event, ...args) => func(...args)),
+    ipcRenderer.on(channel, (...args) => func(...args)),
+  invoke: (channel: string, data: any[]) => ipcRenderer.invoke(channel, data),
 });

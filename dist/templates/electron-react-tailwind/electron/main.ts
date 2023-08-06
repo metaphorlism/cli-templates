@@ -1,7 +1,11 @@
 import { app, BrowserWindow } from "electron";
 import path from "node:path";
-import { registerIpcMainEvents } from "./utils/ipcMainEvent";
-import IpcEvents from "./events";
+import {
+  registerRendererToMainOneWay,
+  registerRendererToMainTwoWay,
+} from "./utils/ipcMainEvent";
+import { oneWay, twoWay } from "./events";
+import { openDevTool } from "./utils/windowAction";
 
 // The built directory structure
 //
@@ -40,12 +44,17 @@ function createWindow() {
     // win.loadFile('dist/index.html')
     win.loadFile(path.join(process.env.DIST, "index.html"));
   }
+
+  openDevTool();
 }
 
-registerIpcMainEvents(IpcEvents);
+registerRendererToMainOneWay(oneWay);
+registerRendererToMainTwoWay(twoWay);
 
 app.on("window-all-closed", () => {
   win = null;
 });
 
 app.whenReady().then(createWindow);
+
+export { win };

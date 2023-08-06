@@ -1,3 +1,4 @@
-import ping from "./ping";
+import oneWay from "./one_way";
+import twoWay from "./two_way";
 
-export default [ping];
+export { oneWay, twoWay };
